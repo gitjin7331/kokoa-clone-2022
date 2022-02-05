@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .status-bar__column {
   width: 33%;
@@ -20,4 +22,5 @@
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+  color: #33c906;
 }

@@ -52,3 +52,14 @@
   margin-bottom: 10px;
   display: block;
 }
+
+.user-component__a {
+  margin: 0px -15px;
+  padding: 15px;
+  display: block;
+  border-radius: 20px;
+}
+
+.user-component__a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

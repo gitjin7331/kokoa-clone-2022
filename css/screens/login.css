@@ -4,35 +4,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 .welcome-header__title {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .welcome-header__text {
   width: 60%;
-  opacity: 0.7;
 }
 
 #login-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0px 30px;
+  color: white;
 }
 
 #login-form input {
   border: none;
-  padding: 15px 0px;
+  padding: 15px 10px;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 400px;
+  color: white;
 }
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input:placeholder {
-  color: rgba(0, 0, 0, 0.4);
+#login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #login-form input:focus {
@@ -43,11 +51,27 @@
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
-  border-radius: 5px;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  width: 60%;
 }
 #login-form a {
   text-align: center;
   text-decoration: none;
-  color: inherit;
   font-size: 13px;
+}
+
+#body-avengers {
+  height: 100vh;
+  background-image: url("../../marvel/avengers-endgame.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 47%;
+}
+
+.div-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
